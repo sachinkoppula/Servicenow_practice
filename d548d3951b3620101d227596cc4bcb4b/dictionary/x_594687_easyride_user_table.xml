@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="USER TABLE" max_length="40" name="x_594687_easyride_user_table" sizeclass="1" type="collection">
+        <element label="DATE" max_length="40" name="date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="DESTINATION" max_length="40" name="destination" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="PHONE NUMBER" max_length="40" name="phone_number" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" label="SOURCE POINT" max_length="40" name="source_point" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="TIME" max_length="40" name="time" type="glide_time"/>
+        <element attributes="edge_encryption_enabled=true" label="USER ID" max_length="50" name="user_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="USER NAME" max_length="40" name="user_name" type="string"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
